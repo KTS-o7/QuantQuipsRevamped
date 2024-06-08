@@ -55,7 +55,7 @@ class ChatBot:
                         print(json_modified_value["choices"][0]["delta"]["content"], end="")
                     streaming_text += json_modified_value["choices"][0]["delta"]["content"]
                 except:
-                    continue
+                    pass
 
         return streaming_text
 
